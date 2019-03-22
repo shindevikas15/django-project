@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% block body_block %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>WELCOME TO REGISTRATION PAGE...!!</h1>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" class="btn btn-success" value="register here">
+        </form>
+    </div>
+
+</div>
+{% endblock %}
